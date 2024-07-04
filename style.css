@@ -916,16 +916,21 @@ section>.container {
 /* footer */
 footer {
 
-	background-image: url(./assets/map.svg);
-	background-position: top;
-	background-size: cover;
+	position: relative;
 
-	
+	/* background-image: url(./assets/map.svg);
+	background-position: top;
+	background-size: cover; */
 
 
 	height: 40vw;
 
 	.info-card {
+
+		position: absolute;
+		top: 0;
+		right: calc(50vw - 12vw);
+		z-index: 3;
 
 		width: 24vw;
 		height: 14vw;
@@ -967,6 +972,18 @@ footer {
 		}
 
 
+	}
+
+	img:hover{
+		color: green;
+	}
+
+
+	iframe {
+		border: 0;
+		position: relative;
+		/* top: -255px; */
+		z-index: 0;
 	}
 
 
