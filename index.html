@@ -69,9 +69,9 @@
 
 				</div>
 
-				<a href="#">заказать консультацию</a>
+				<a href="#form">заказать консультацию</a>
 
-				<p>или <a href="#" class="catalog">перейти в каталог</a></p>
+				<p>или <a href="#catalog" class="catalog">перейти в каталог</a></p>
 
 			</div>
 
@@ -92,21 +92,21 @@
 
 			<div class="advantages-cards">
 
-				<figure>
+				<figure class="cup">
 					<img src="./assets/cup.svg" alt="">
 					<figcaption>Делимся опытом</figcaption>
 					<p>Наши сотрудники всегда готовы поделиться своим опытом, <br>так как сами бегают полумарафоны,
 						переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
 				</figure>
 
-				<figure>
+				<figure class="heart">
 					<img src="./assets/heart.svg" alt="">
 					<figcaption>Заботимся о здоровье</figcaption>
 					<p>Мы работаем для того, <br>чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в
 						радость Вам и Вашим близким!</p>
 				</figure>
 
-				<figure>
+				<figure class="shoe">
 					<img src="./assets/shoe.svg" alt="">
 					<figcaption>Учим бегать</figcaption>
 					<p>Помогаем с обучением<br>правильной технике бега! <br>Дружим с крупнейшей школой бега в России -
@@ -123,7 +123,7 @@
 
 	<!-- 	section contact-form -->
 
-	<section class="contact-form">
+	<section class="contact-form" id="form">
 		<div class="container">
 
 			<h2>Получите бесплатную консультацию<br>по подбору пульсометра</h2>
@@ -132,9 +132,9 @@
 
 			<form action="">
 
-				<input type="text" placeholder="Ваше имя">
-				<input type="tel" name="" id="" placeholder="Ваш телефон">
-				<input type="email" name="" id="" placeholder="Ваш E-mail">
+				<input type="text" name="text" id="" placeholder="Ваше имя" required>
+				<input type="tel" name="tel" id="" placeholder="Ваш телефон" required>
+				<input type="email" name="email" id="" placeholder="Ваш E-mail" required>
 				<input type="submit" value="Заказать консультацию">
 
 			</form>
@@ -186,7 +186,7 @@
 
 
 	<!-- section catalog -->
-	<section class="catalog">
+	<section class="catalog" id="catalog">
 		<div class="container">
 
 			<h2>Каталог пульсометров</h2>

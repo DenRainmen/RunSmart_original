@@ -144,23 +144,25 @@ section>.container {
 
 			figure {
 				text-align: center;
-			}
+			
 
-			img {
-				width: 2.3vw;
-			}
+				img {
+					width: 2.3vw;
+				}
+	
+				figcaption {
+					font-family: var(--font-family);
+					font-weight: 500;
+					font-size: 0.7vw;
+					line-height: 100%;
+					text-align: center;
+					color: #fff;
+					margin-top: 1vw;
+				}
 
-			figcaption {
-				font-family: var(--font-family);
-				font-weight: 500;
-				font-size: 0.7vw;
-				line-height: 100%;
-				text-align: center;
-				color: #fff;
-				margin-top: 1vw;
-			}
 
-		}
+			}
+}
 
 		a {
 
@@ -206,11 +208,21 @@ section>.container {
 			text-align: center;
 			color: #fff;
 			text-decoration: underline;
+
+			cursor:pointer;
 		}
 
-	}
+		}
 
-}
+		
+
+
+		
+
+	}
+	
+	
+
 
 /* section advantages */
 .advantages {
@@ -230,6 +242,7 @@ section>.container {
 			padding-top: 3.6vw;
 
 		}
+
 
 
 
@@ -262,6 +275,8 @@ section>.container {
 
 				gap: 1vw;
 
+
+
 				img {
 					width: 3.6vw;
 
@@ -293,6 +308,19 @@ section>.container {
 					color: #f00;
 				}
 
+			}
+
+
+			figure.cup img:hover{
+				animation: rotate 3s infinite;
+			}
+
+			figure.heart img:hover{
+				animation: scale 1s infinite;
+			}
+
+			figure.shoe img:hover{
+				animation: jump 1s infinite;
 			}
 		}
 
@@ -991,5 +1019,54 @@ footer {
 	}
 
 
+
+}
+
+
+
+/* Animations */
+
+@keyframes rotate {
+
+	from { 
+			transform: rotateY(0deg)
+	}
+
+	to {
+			transform: rotateY(360deg)
+	}
+}
+
+
+@keyframes scale {
+
+	0% { 
+			transform: scale(1)
+	}
+
+	50% {
+			transform: scale(1.2)
+	}
+
+	100% { 
+		transform: scale(1)
+}
+
+}
+
+
+@keyframes jump {
+
+	0% { 
+			transform: translateY(0)
+	}
+
+	50% {
+			transform: translateY(-1vw)
+	}
+
+	100% { 
+		transform: translateY(0)
+}
 
 }
