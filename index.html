@@ -187,6 +187,10 @@
 	</section>
 
 
+
+
+
+
 	<!-- section catalog -->
 
 	<section class="catalog" id="catalog">
@@ -198,6 +202,9 @@
 
 
 			<!-- Дальше      пошёл       бутстрап -->
+
+
+
 
 			<div class="tabs-container">
 
@@ -223,7 +230,9 @@
 
 				</ul>
 
-				<!-- Контент -->
+
+
+				<!-- Контейнер с карточками -->
 				<div class="tab-content" id="pills-tabContent">
 
 
@@ -236,7 +245,7 @@
 						<div class="catalog-cards">
 
 
-							<div class="product-card">
+							<div class="product-card" id="card1">
 
 								
 								<div class="front-side">
@@ -247,7 +256,7 @@
 
 									<h3>Для первых шагов в тренировках, основанных на сердечном ритме</h3>
 
-									<a class="details">ПОДРОБНЕЕ</a>
+									<span class="details" onclick="frontSideFlip(event)">ПОДРОБНЕЕ</span>
 
 
 									<hr>
@@ -281,7 +290,7 @@
 										<li>Вы сможете посмотреть данные по 10 тренировкам.</li>
 									</ul>
 
-									<a  class="back">НАЗАД</a>
+									<span  class="back" onclick="backSideFlip(event)">НАЗАД</span>
 
 
 									<hr>
@@ -302,7 +311,8 @@
 
 							</div>
 
-							<div class="product-card">
+
+							<div class="product-card" id="card2">
 
 								
 								<div class="front-side">
@@ -313,7 +323,7 @@
 
 									<h3>Для первых шагов в тренировках, основанных на сердечном ритме</h3>
 
-									<a class="details">ПОДРОБНЕЕ</a>
+									<span class="details" onclick="frontSideFlip(event)">ПОДРОБНЕЕ</span>
 
 
 									<hr>
@@ -328,7 +338,7 @@
 
 										</div>
 
-										<a href="">КУПИТЬ</a>
+										<a href="https://market.yandex.ru/catalog--shagomery-i-aksessuary/18072178/list?text=%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D1%8B&hid=1009489&rs=eJwdzDEKwjAUgGEjDrEuGcVBO7q1L0mjDi6OTuIFHq-PSAttLaZF8AYeQQ8lOHsZxfWH79fyIG4j-X5td1UEkZRCiamIhRrOFtwShuLcYtlw3-G17ArktsbQ-YbLKh4sB1H2J5OpikdKzeZMoacKmS7nPvgKDZadrwMGTxcu4s9zvHx87r_7Xp7IeUtre9Sw0qk12cqZjbPJr50sgyHtITNM4Hy-AU05AacuTRNI4AvJCzJT&rt=9" target="_blank">КУПИТЬ</a>
 									</div>
 
 								</div>
@@ -347,7 +357,7 @@
 										<li>Вы сможете посмотреть данные по 10 тренировкам.</li>
 									</ul>
 
-									<a  class="back">НАЗАД</a>
+									<span  class="back" onclick="backSideFlip(event)">НАЗАД</span>
 
 
 									<hr>
@@ -362,13 +372,13 @@
 
 										</div>
 
-										<a href="">КУПИТЬ</a>
+										<a href="https://market.yandex.ru/catalog--shagomery-i-aksessuary/18072178/list?text=%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D1%8B&hid=1009489&rs=eJwdzDEKwjAUgGEjDrEuGcVBO7q1L0mjDi6OTuIFHq-PSAttLaZF8AYeQQ8lOHsZxfWH79fyIG4j-X5td1UEkZRCiamIhRrOFtwShuLcYtlw3-G17ArktsbQ-YbLKh4sB1H2J5OpikdKzeZMoacKmS7nPvgKDZadrwMGTxcu4s9zvHx87r_7Xp7IeUtre9Sw0qk12cqZjbPJr50sgyHtITNM4Hy-AU05AacuTRNI4AvJCzJT&rt=9" target="_blank">КУПИТЬ</a>
 									</div>
 								</div>
 
 							</div>
 
-							<div class="product-card">
+							<div class="product-card" id="card3">
 
 								
 								<div class="front-side">
@@ -379,7 +389,7 @@
 
 									<h3>Для первых шагов в тренировках, основанных на сердечном ритме</h3>
 
-									<a class="details">ПОДРОБНЕЕ</a>
+									<span class="details" onclick="frontSideFlip(event)">ПОДРОБНЕЕ</span>
 
 
 									<hr>
@@ -394,7 +404,7 @@
 
 										</div>
 
-										<a href="">КУПИТЬ</a>
+										<a href="https://market.yandex.ru/catalog--shagomery-i-aksessuary/18072178/list?text=%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D1%8B&hid=1009489&rs=eJwdzDEKwjAUgGEjDrEuGcVBO7q1L0mjDi6OTuIFHq-PSAttLaZF8AYeQQ8lOHsZxfWH79fyIG4j-X5td1UEkZRCiamIhRrOFtwShuLcYtlw3-G17ArktsbQ-YbLKh4sB1H2J5OpikdKzeZMoacKmS7nPvgKDZadrwMGTxcu4s9zvHx87r_7Xp7IeUtre9Sw0qk12cqZjbPJr50sgyHtITNM4Hy-AU05AacuTRNI4AvJCzJT&rt=9" target="_blank">КУПИТЬ</a>
 									</div>
 
 								</div>
@@ -413,7 +423,7 @@
 										<li>Вы сможете посмотреть данные по 10 тренировкам.</li>
 									</ul>
 
-									<a  class="back">НАЗАД</a>
+									<span  class="back" onclick="backSideFlip(event)">НАЗАД</span>
 
 
 									<hr>
@@ -428,7 +438,7 @@
 
 										</div>
 
-										<a href="">КУПИТЬ</a>
+										<a href="https://market.yandex.ru/catalog--shagomery-i-aksessuary/18072178/list?text=%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D1%8B&hid=1009489&rs=eJwdzDEKwjAUgGEjDrEuGcVBO7q1L0mjDi6OTuIFHq-PSAttLaZF8AYeQQ8lOHsZxfWH79fyIG4j-X5td1UEkZRCiamIhRrOFtwShuLcYtlw3-G17ArktsbQ-YbLKh4sB1H2J5OpikdKzeZMoacKmS7nPvgKDZadrwMGTxcu4s9zvHx87r_7Xp7IeUtre9Sw0qk12cqZjbPJr50sgyHtITNM4Hy-AU05AacuTRNI4AvJCzJT&rt=9" target="_blank">КУПИТЬ</a>
 									</div>
 								</div>
 
@@ -436,15 +446,16 @@
 
 							
 
-
-
-
+						
 
 						</div>
 
 
-
 					</div>
+
+
+
+
 
 
 
@@ -456,7 +467,7 @@
 						<div class="catalog-cards">
 
 
-							<div class="product-card">
+							<div class="product-card" >
 
 								
 								<div class="front-side">
@@ -467,7 +478,7 @@
 
 									<h3>Для первых шагов в тренировках, основанных на сердечном ритме</h3>
 
-									<a class="details">ПОДРОБНЕЕ</a>
+									<span class="details">ПОДРОБНЕЕ</span>
 
 
 									<hr>
@@ -522,7 +533,7 @@
 
 							</div>
 
-							<div class="product-card">
+							<div class="product-card" >
 
 								
 								<div class="front-side">
@@ -533,7 +544,7 @@
 
 									<h3>Для первых шагов в тренировках, основанных на сердечном ритме</h3>
 
-									<a class="details">ПОДРОБНЕЕ</a>
+									<span class="details">ПОДРОБНЕЕ</span>
 
 
 									<hr>
@@ -588,7 +599,7 @@
 
 							</div>
 
-							<div class="product-card">
+ 						<div class="product-card" >
 
 								
 								<div class="front-side">
@@ -599,7 +610,7 @@
 
 									<h3>Для первых шагов в тренировках, основанных на сердечном ритме</h3>
 
-									<a class="details">ПОДРОБНЕЕ</a>
+									<span class="details">ПОДРОБНЕЕ</span>
 
 
 									<hr>
@@ -685,6 +696,11 @@
 
 		</div>
 	</section>
+
+
+
+
+
 
 
 

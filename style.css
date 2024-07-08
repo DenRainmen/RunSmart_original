@@ -588,6 +588,7 @@ h2 {
 			transition: 0.5s;
 			backface-visibility: hidden;
 			border-radius: 10px;
+			transform: rotateY('0deg');
 
 
 
@@ -615,7 +616,7 @@ h2 {
 				color: #0d0d0d;
 			}
 
-			a.details{
+			.details{
 
 				padding: 0;
 				margin: 0;
@@ -719,6 +720,9 @@ h2 {
 			backface-visibility: hidden;
 			border-radius: 10px;
 			transform: rotateY(-180deg);
+	
+		
+		
 
 
 			img {
@@ -756,7 +760,7 @@ h2 {
 
 			}
 
-			a.back {
+			.back {
 
 				padding: 0;
 				margin: 0;
@@ -853,6 +857,8 @@ h2 {
 
 		transform: rotateY(180deg);
 		backface-visibility: hidden;
+
+
 	}
 
 
