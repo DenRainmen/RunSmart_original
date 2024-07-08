@@ -330,6 +330,12 @@ section>.container {
 
 }
 
+
+
+
+
+
+
 /* section contact-form */
 .contact-form {
 
@@ -413,6 +419,14 @@ section>.container {
 }
 
 
+
+
+
+
+
+
+
+
 /* section slider */
 .slider {
 
@@ -454,6 +468,13 @@ section>.container {
 
 
 }
+
+
+
+
+
+
+
 
 /* section catalog */
 
@@ -533,60 +554,7 @@ h2 {
 	padding-bottom: 2.3vw;
 }
 
-/* .catalog-links {
 
-	width: 33vw;
-	margin: 0 auto;
-
-	display: flex;
-	
-	justify-content: space-between;
-
-
-
-	a {
-		
-
-		display: inline-grid;
-		border: 1px solid #d0d0d0;
-		background-color: #fff;
-		padding: 0.5vw 2vw;
-		transform: skewX(-20deg);
-		text-decoration: none;
-		
-
-
-		span {
-
-			display: inline-block;
-
-			font-family: var(--font-family);
-			font-weight: 400;
-			font-size: 0.9vw;
-
-			text-transform: uppercase;
-			text-align: center;
-			color: #6B6B6B;
-
-			transform: skewX(20deg);
-
-		}
-
-
-	}
-
-	a:hover {
-		background-color: #C70101;
-	}
-
-	a:hover span {
-		color: #F6F6F6;
-	}
-
-
-
-
-} */
 
 
 
@@ -600,24 +568,19 @@ h2 {
 	display: grid;
 	place-content: center;
 	grid-template-columns: repeat(3, 17vw);
-	/* grid-template-rows: repeat(2, 1fr); */
-	/* grid-row-gap: 2vw; */
 	grid-column-gap: 1vw;
 
 
 
 	/* card не подходит, ибо бутстрап занял его */
+
 	.product-card {
 
 		position: relative;
 		perspective: 1000px;
 
-		.front_side {
+		.front-side {
 
-			/* display: flex;
-			flex-direction: column;
-			justify-content: space-evenly;
-			align-items: center; */
 
 			width: 15.6vw;
 			padding: 1vw;
@@ -736,7 +699,7 @@ h2 {
 		}
 
 
-		.back_side {
+		.back-side {
 
 			display: flex;
 			flex-direction: column;
@@ -877,17 +840,42 @@ h2 {
 
 	}
 
-	.product-card:hover .front_side {
+	/* .product-card:hover .front_side {
 		transform: rotateY(-180deg);
-	}
+	} */
 
-	.product-card:hover .back_side {
+	/* .product-card:hover .back_side {
 		transform: rotateY(-360deg);
+	} */
+
+
+	.front-side.active{
+
+		transform: rotateY(180deg);
+		backface-visibility: hidden;
 	}
 
+
+.back-side.active{
+ /*  background-color: red; */
+  transform: rotateY(0deg);
+  z-index: 1;
 }
 
 }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* section customer-reviews  */
