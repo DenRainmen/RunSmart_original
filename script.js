@@ -22,9 +22,9 @@ btnBack.addEventListener("click", function(){
 }) */
 
 
-  let frontCollection = document.querySelectorAll('.front-side');
+  let frontSideCollection = document.querySelectorAll('.front-side');
 
-  let backCollection = document.querySelectorAll('.back-side');
+  let backSideCollection = document.querySelectorAll('.back-side');
 
 
 
@@ -34,13 +34,13 @@ function frontSideFlip(event) {
    /* console.log(frontCollection); */
 
 
-   frontCollection.forEach((el, index) => {
+   frontSideCollection.forEach((el, index) => {
 
     el.addEventListener('click', () => {
 
-      event.currentTarget.classList.toggle("active")
+      event.currentTarget.classList.add("active")
  
-     backCollection[index].classList.add("active")
+     backSideCollection[index].classList.add("active")
 
     });
 
@@ -63,8 +63,8 @@ function backSideFlip(event) {
 
     el.addEventListener('click', () => {
 
-      backCollection[index].classList.remove('active');
-      frontCollection[index].classList.remove('active')
+      backSideCollection[index].classList.remove('active');
+      frontSideCollection[index].classList.remove('active')
 
     });
 
