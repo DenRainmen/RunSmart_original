@@ -177,22 +177,25 @@
 
 			</form>
 
-			<dialog id="thanks">
-
-				<h2 class="title-form">Спасибо за вашу заявку!</h2>
-
-				<h3 class="subtitle-form">Наш менеджер свяжется с вами в ближайшее время!</h3>
-
-				
-
-			<!-- Geometric Shapes Extended =>	Very Heavy Saltire -->
-				<span class="close" onclick="thanks.close()" title="Close window">🞭</span>
-				
-			</dialog>
+			
 
 
 
 		</div>
+
+		<dialog id="thanks">
+
+			<h2 class="title-form">Спасибо за вашу заявку!</h2>
+
+			<h3 class="subtitle-form">Наш менеджер свяжется с вами в ближайшее время!</h3>
+
+			
+
+		<!-- Geometric Shapes Extended =>	Very Heavy Saltire -->
+			<span class="close" onclick="thanks.close()" title="Close window">🞭</span>
+			
+		</dialog>
+
 	</section>
 
 
@@ -324,7 +327,9 @@
 
 										</div>
 
-										<a href="#"   onclick="order.showModal()">КУПИТЬ</a>
+										<!-- <a href="#"   onclick="order.showModal()">КУПИТЬ</a> -->
+
+										<input type="submit" value="Купить" onclick="order.showModal()" >
 
 
 									</div>
@@ -359,80 +364,13 @@
 
 										</div>
 
-										<a href="#" onclick="order.showModal()">КУПИТЬ</a>
+										<input type="submit" value="Купить" onclick="order.showModal()" >
 									</div>
 								</div>
 
 							
 							</div>
-							
-							
-							<div class="product-card" id="card">
 
-								
-								<div class="front-side">
-
-									<img src="./assets/catalog/card1.jpeg" alt="" loading="lazy">
-
-									<h2>Модель Polar FT1</h2>
-
-									<h3>Для первых шагов в тренировках, основанных на сердечном ритме</h3>
-
-									<span class="details" onclick="frontSideFlip(event)">ПОДРОБНЕЕ</span>
-
-
-									<hr>
-
-									<div class="wrapper">
-
-										<div class="prices">
-
-											<div class="old-price">4 750 руб.</div>
-
-											<div class="price">4 500 руб.</div>
-
-										</div>
-
-										<a href="#"   onclick="order.showModal()">КУПИТЬ</a>
-
-
-									</div>
-
-								</div>
-
-								
-
-								<div class="back-side">
-
-								
-
-									<ul>
-										<li>обеспечивают хорошую амортизацию и поддержку для стопы</li>
-										<li>улучшают производительность бегуна за счет оптимальной поддержки и амортизации.</li>
-										<li>обеспечивают комфорт и защиту стопы во время бега, что способствует улучшению общего опыта тренировок.</li>
-										<li>обеспечивают хорошее сцепление с поверхностью и улучшенную устойчивость во время бега.</li>
-									</ul>
-
-									<span  class="back" onclick="backSideFlip(event)">НАЗАД</span>
-
-
-									<hr>
-
-									<div class="wrapper">
-
-										<div class="prices">
-
-											<div class="old-price">4 750 руб.</div>
-
-											<div class="price">4 500 руб.</div>
-
-										</div>
-
-										<a href="#" onclick="order.showModal()">КУПИТЬ</a>
-									</div>
-								</div>
-
-							</div>
 
 
 							<div class="product-card" id="card">
@@ -461,7 +399,9 @@
 
 										</div>
 
-										<a href="#"   onclick="order.showModal()">КУПИТЬ</a>
+										<!-- <a href="#"   onclick="order.showModal()">КУПИТЬ</a> -->
+
+										<input type="submit" value="Купить" onclick="order.showModal()" >
 
 
 									</div>
@@ -496,11 +436,87 @@
 
 										</div>
 
-										<a href="#" onclick="order.showModal()">КУПИТЬ</a>
+										<input type="submit" value="Купить" onclick="order.showModal()" >
 									</div>
 								</div>
 
+							
 							</div>
+
+
+
+							<div class="product-card" id="card">
+
+								
+								<div class="front-side">
+
+									<img src="./assets/catalog/card1.jpeg" alt="" loading="lazy">
+
+									<h2>Модель Polar FT1</h2>
+
+									<h3>Для первых шагов в тренировках, основанных на сердечном ритме</h3>
+
+									<span class="details" onclick="frontSideFlip(event)">ПОДРОБНЕЕ</span>
+
+
+									<hr>
+
+									<div class="wrapper">
+
+										<div class="prices">
+
+											<div class="old-price">4 750 руб.</div>
+
+											<div class="price">4 500 руб.</div>
+
+										</div>
+
+										<!-- <a href="#"   onclick="order.showModal()">КУПИТЬ</a> -->
+
+										<input type="submit" value="Купить" onclick="order.showModal()" >
+
+
+									</div>
+
+								</div>
+
+								
+
+								<div class="back-side">
+
+								
+
+									<ul>
+										<li>обеспечивают хорошую амортизацию и поддержку для стопы</li>
+										<li>улучшают производительность бегуна за счет оптимальной поддержки и амортизации.</li>
+										<li>обеспечивают комфорт и защиту стопы во время бега, что способствует улучшению общего опыта тренировок.</li>
+										<li>обеспечивают хорошее сцепление с поверхностью и улучшенную устойчивость во время бега.</li>
+									</ul>
+
+									<span  class="back" onclick="backSideFlip(event)">НАЗАД</span>
+
+
+									<hr>
+
+									<div class="wrapper">
+
+										<div class="prices">
+
+											<div class="old-price">4 750 руб.</div>
+
+											<div class="price">4 500 руб.</div>
+
+										</div>
+
+										<input type="submit" value="Купить" onclick="order.showModal()" >
+									</div>
+								</div>
+
+							
+							</div>
+							
+							
+							
 							
 
 
@@ -736,27 +752,7 @@
 						</div>
 
 
-						<dialog id="order">
-
-							<h2 class="title-form">Ваш заказ: </h2>
-		
-							<h3 class="subtitle-form">Модель Polar FT1</h3>
-		
-							<form action="">
-		
-		
-		
-								<input type="text" name="text" id="" placeholder="Ваше имя" required autocomplete="additional-name">
-								<input type="tel" name="tel" id="" placeholder="Ваш телефон" required autocomplete="cc-number">
-								<input type="email" name="email" id="" placeholder="Ваш E-mail" required autocomplete="email">
-								<input type="submit" value="КУПИТЬ" >
-				
-							</form>
-		
-						<!-- Geometric Shapes Extended =>	Very Heavy Saltire -->
-							<span class="close" onclick="order.close()" title="Close window">🞭</span>
-							
-						</dialog>
+						
 
 					
 
@@ -778,6 +774,33 @@
 
 
 		</div>
+
+
+		<dialog id="order">
+
+			<h2 class="title-form">Ваш заказ: </h2>
+
+			<h3 class="subtitle-form">Модель Polar FT1</h3>
+
+			<form action="">
+
+
+
+				<input type="text" name="text" id="" placeholder="Ваше имя" required autocomplete="additional-name">
+				<input type="tel" name="tel" id="" placeholder="Ваш телефон" required autocomplete="cc-number">
+				<input type="email" name="email" id="" placeholder="Ваш E-mail" required autocomplete="email">
+				<input type="submit" value="КУПИТЬ" >
+
+			</form>
+
+		<!-- Geometric Shapes Extended =>	Very Heavy Saltire -->
+			<span class="close" onclick="order.close()" title="Close window">🞭</span>
+			
+		</dialog>
+
+
+
+
 	</section>
 
 

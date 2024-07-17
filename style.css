@@ -458,6 +458,7 @@ section>.container {
 
 /* section contact-form */
 .contact-form {
+	position: relative;
 
 	/* 	height: 680px;
 	border: 1px solid #000; */
@@ -537,7 +538,7 @@ section>.container {
 	}
 
 	dialog {
-		position: relative;
+		
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -546,6 +547,7 @@ section>.container {
 	}
 
 	dialog#thanks {
+		
 		width: 19.8vw;
 		/* height: 20.8vw; */
 		padding: 1.8vw 3.5vw;
@@ -623,8 +625,9 @@ section>.container {
 			transition: 1s;
 			width: 0.5vw;
 			height: 0.5vw;
-			/* border: 1px solid black; */
-			padding: 3px;
+			/* border: 1px solid red;
+border-radius: 100%;
+			padding: 13px; */
 			color: var(--active-bg);
 		}
 
@@ -718,6 +721,8 @@ section>.container {
 /* section catalog */
 
 .catalog {
+
+	position:relative;
 
 	text-align: center;
 
@@ -905,7 +910,7 @@ section>.container {
 
 						}
 
-						a {
+						input[type="submit"] {
 							display: inline-grid;
 							place-items: center;
 							margin: 0;
@@ -922,8 +927,9 @@ section>.container {
 							text-transform: uppercase;
 							text-align: center;
 							color: #fff;
+							border: none;
 
-							text-decoration: none;
+							
 
 							/* 	pointer-events: none; */
 						}
@@ -1051,7 +1057,7 @@ section>.container {
 
 						}
 
-						a {
+						input[type="submit"] {
 							display: inline-grid;
 							place-items: center;
 							margin: 0;
@@ -1068,8 +1074,11 @@ section>.container {
 							text-transform: uppercase;
 							text-align: center;
 							color: #fff;
+							border: none;
 
-							text-decoration: none;
+							
+
+							/* 	pointer-events: none; */
 						}
 
 
@@ -1120,7 +1129,7 @@ section>.container {
 	}
 
 	dialog {
-		position: relative;
+		
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
