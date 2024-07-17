@@ -1305,13 +1305,20 @@ section>.container {
 				justify-content: space-between;
 				align-items: center;
 				padding-bottom: 3.4vw;
-
 				gap: 3vw;
 
+				
 				img {
 					width: 8.9vw;
+					transition: 2s;
 
 				}
+
+				img:hover{
+					animation: scale 3s ease-in-out infinite;
+				}
+
+
 
 				figcaption {
 
@@ -1491,7 +1498,7 @@ footer {
 	}
 
 	to {
-		transform: rotateY(360deg)
+		transform: rotateY(-360deg)
 	}
 }
 
