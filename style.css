@@ -163,7 +163,17 @@ section>.container {
 				}
 
 
+
+
 			}
+
+			figure:hover {
+				animation: rotate 3s infinite;
+			}
+
+
+
+
 		}
 
 		a {
@@ -215,6 +225,9 @@ section>.container {
 		}
 
 	}
+
+
+
 
 }
 
@@ -1110,7 +1123,7 @@ footer {
 
 
 
-/* Animations */
+/*--------- Animations ---------- */
 
 @keyframes rotate {
 
