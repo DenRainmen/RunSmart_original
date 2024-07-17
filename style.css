@@ -199,6 +199,116 @@ section>.container {
 
 		}
 
+		dialog::backdrop {
+			background-color: rgb(0 0 0 / 0.6);
+
+			backdrop-filter: blur(5px);
+		}
+
+		dialog {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border: none;
+
+		}
+
+		dialog#consult {
+			width: 19.8vw;
+			/* height: 20.8vw; */
+			padding: 2.1vw;
+			background-color: #f2f2f2;
+
+			.title-form {
+				font-family: var(--font-family);
+				font-weight: 700;
+				font-size: 0.8vw;
+
+				text-transform: initial;
+				color: #000;
+
+				text-align: left;
+			}
+
+			.subtitle-form {
+				font-family: var(--font-family);
+				font-weight: 700;
+				font-size: 0.7vw;
+
+				color: #000;
+				text-align: left;
+				padding-bottom: 1.2vw
+			}
+
+			form {
+				display: flex;
+				flex-direction: column;
+				gap: 0.7vw;
+
+				input {
+
+					padding: 0;
+					margin: 0;
+					outline: none;
+					border: none;
+
+					padding: 1vw;
+					width: 100%;
+
+					font-family: var(--font-family);
+					font-weight: 400;
+					font-size: 0.7vw;
+
+					color: #4b4b4b;
+
+
+					border-radius: 0.2vw;
+				}
+
+				input[type="submit"] {
+					background-color: #C70101;
+
+					font-family: var(--font-family);
+					font-weight: 500;
+					font-size: 0.8vw;
+					text-transform: uppercase;
+					text-align: center;
+					color: #fff;
+				}
+
+
+			}
+
+			span.close {
+				font-size: 1vw;
+				position: absolute;
+				display: inline-grid;
+				place-content: center;
+				top: 0.6vw;
+				right: 0.6vw;
+				cursor: pointer;
+				transition: 1s;
+				width: 0.5vw;
+				height: 0.5vw;
+				/* border: 1px solid black; */
+				padding: 3px;
+				color: var(--active-bg);
+			}
+
+			/* 	span.close:hover {
+				transform-origin: center center;
+				transform: rotateZ(90deg);
+			} */
+
+
+
+
+
+		}
+
+
+
 		p {
 			font-family: var(--font-family);
 			font-weight: 500;
@@ -420,9 +530,111 @@ section>.container {
 
 	}
 
+	dialog::backdrop {
+		background-color: rgb(0 0 0 / 0.6);
+
+		backdrop-filter: blur(5px);
+	}
+
+	dialog {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: none;
+
+	}
+
+	dialog#thanks {
+		width: 19.8vw;
+		/* height: 20.8vw; */
+		padding: 1.8vw 3.5vw;
+		background-color: #f2f2f2;
+
+		h2.title-form {
+			font-family: var(--font-family);
+			font-weight: 700;
+			font-size: 0.8vw;
+
+			text-transform: initial;
+			color: #000;
+
+			text-align: center;
+			padding: initial;
+		}
+
+		h3.subtitle-form {
+			font-family: var(--font-family);
+			font-weight: 700;
+			font-size: 0.7vw;
+
+			color: #000;
+			text-align: center;
+			padding: initial;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 0.7vw;
+
+			input {
+
+				padding: 0;
+				margin: 0;
+				outline: none;
+				border: none;
+
+				padding: 1vw;
+				width: 100%;
+
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 0.7vw;
+
+				color: #4b4b4b;
+
+
+				border-radius: 0.2vw;
+			}
+
+			input[type="submit"] {
+				background-color: #C70101;
+
+				font-family: var(--font-family);
+				font-weight: 500;
+				font-size: 0.8vw;
+				text-transform: uppercase;
+				text-align: center;
+				color: #fff;
+			}
+
+
+		}
+
+		span.close {
+			font-size: 1vw;
+			position: absolute;
+			display: inline-grid;
+			place-content: center;
+			top: 0.6vw;
+			right: 0.6vw;
+			cursor: pointer;
+			transition: 1s;
+			width: 0.5vw;
+			height: 0.5vw;
+			/* border: 1px solid black; */
+			padding: 3px;
+			color: var(--active-bg);
+		}
 
 
 
+
+
+
+
+	}
 
 
 
@@ -524,6 +736,63 @@ section>.container {
 
 			padding-bottom: 2.3vw;
 		}
+
+
+		.nav {
+			justify-content: center;
+
+
+
+			.nav-item {
+				margin: 0 10px;
+			}
+
+			.tabs-container {
+				display: grid;
+				place-content: center;
+			}
+
+			button.nav-link {
+				font-size: 0.8vw;
+				padding: 0.50vw 1.2vw;
+				border-radius: 0px !important;
+				color: #6b6b6b;
+				text-transform: uppercase;
+				border: 1px solid #6b6b6b;
+				transform: skew(-20deg);
+
+			}
+
+			button.nav-link span {
+				display: inline-block;
+				transform: skew(20deg);
+			}
+
+			button.nav-link span:hover {
+				color: #6b6b6b;
+			}
+
+			button.nav-link.active {
+				background-color: var(--active-bg) !important;
+				border-radius: 0;
+				transform: skew(-20deg);
+
+			}
+
+			.nav-link.active span {
+				display: inline-block;
+				transform: skew(20deg);
+
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 0.8vw;
+				line-height: 100%;
+				text-transform: uppercase;
+				text-align: center;
+				color: #fff;
+			}
+		}
+
 
 		.catalog-cards {
 
@@ -655,6 +924,8 @@ section>.container {
 							color: #fff;
 
 							text-decoration: none;
+
+							/* 	pointer-events: none; */
 						}
 
 
@@ -809,6 +1080,9 @@ section>.container {
 				}
 
 
+
+
+
 			}
 
 
@@ -832,65 +1106,120 @@ section>.container {
 		}
 
 
-		.nav {
-			justify-content: center;
-		}
 
-		.nav-item {
-			margin: 0 10px;
-		}
+	}
 
-		.tabs-container {
-			display: grid;
-			place-content: center;
-		}
 
-		button.nav-link {
-			font-size: 0.8vw;
-			padding: 0.50vw 1.2vw;
-			border-radius: 0px !important;
-			color: #6b6b6b;
-			text-transform: uppercase;
-			border: 1px solid #6b6b6b;
-			transform: skew(-20deg);
 
-		}
+	/* Модальное окно с заказом */
 
-		button.nav-link span {
-			display: inline-block;
-			transform: skew(20deg);
-		}
+	dialog::backdrop {
+		background-color: rgb(0 0 0 / 0.6);
 
-		button.nav-link span:hover {
-			color: #6b6b6b;
-		}
+		backdrop-filter: blur(5px);
+	}
 
-		button.nav-link.active {
-			background-color: var(--active-bg) !important;
-			border-radius: 0;
-			transform: skew(-20deg);
+	dialog {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: none;
 
-		}
+	}
 
-		.nav-link.active span {
-			display: inline-block;
-			transform: skew(20deg);
+	dialog#order {
+		width: 19.8vw;
+		/* height: 20.8vw; */
+		padding: 1.8vw 3.5vw;
+		background-color: #f2f2f2;
 
+		h2.title-form {
 			font-family: var(--font-family);
-			font-weight: 400;
+			font-weight: 700;
 			font-size: 0.8vw;
-			line-height: 100%;
-			text-transform: uppercase;
+
+			text-transform: initial;
+			color: #000;
+
 			text-align: center;
-			color: #fff;
+			padding: initial;
 		}
+
+		h3.subtitle-form {
+			font-family: var(--font-family);
+			font-weight: 700;
+			font-size: 0.7vw;
+
+			color: #000;
+			text-align: center;
+			padding: initial;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 0.7vw;
+
+			input {
+
+				padding: 0;
+				margin: 0;
+				outline: none;
+				border: none;
+
+				padding: 1vw;
+				width: 100%;
+
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 0.7vw;
+
+				color: #4b4b4b;
+
+
+				border-radius: 0.2vw;
+			}
+
+			input[type="submit"] {
+				background-color: #C70101;
+
+				font-family: var(--font-family);
+				font-weight: 500;
+				font-size: 0.8vw;
+				text-transform: uppercase;
+				text-align: center;
+				color: #fff;
+			}
+
+
+		}
+
+		span.close {
+			font-size: 1vw;
+			position: absolute;
+			display: inline-grid;
+			place-content: center;
+			top: 0.6vw;
+			right: 0.6vw;
+			cursor: pointer;
+			transition: 1s;
+			width: 0.5vw;
+			height: 0.5vw;
+			/* border: 1px solid black; */
+			padding: 3px;
+			color: var(--active-bg);
+		}
+
+
+
 
 
 
 
 	}
 
-
+	/* ---------------------------------------- */
 
 
 }
@@ -1043,21 +1372,23 @@ section>.container {
 /* footer */
 footer {
 
+
+
+	height: 40vw;
 	position: relative;
+
 
 	/* background-image: url(./assets/map.svg);
 	background-position: top;
 	background-size: cover; */
 
 
-	height: 40vw;
+	.infoCard{
 
-	.info-card {
-
-		position: absolute;
-		top: 0;
+		position: absolute; 
+		top: 0; 
 		right: calc(50vw - 12vw);
-		z-index: 3;
+/* 		z-index: 1; */
 
 		width: 24vw;
 		height: 14vw;
@@ -1068,6 +1399,10 @@ footer {
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
+
+		color: #fff;
+		border: none;
+
 
 
 		.address {
@@ -1105,16 +1440,40 @@ footer {
 		}
 
 
-	}
+		span.closeDialog {
+			font-size: 1vw;
+			position: absolute;
+			display: inline-grid;
+			place-content: center;
+			top: 0.6vw;
+			right: 0.6vw;
+			cursor: pointer;
+			/* transition: 1s; */
+			width: 0.5vw;
+			height: 0.5vw;
+			/* border: 1px solid black; */
+			padding: 3px;
+			color: #fff;
+
+		}
+
+
+
+	} 
+
+
+
+
+
 
 
 
 
 	iframe {
 		border: 0;
-		position: relative;
+		/* 	position: relative; */
 		/* top: -255px; */
-		z-index: 0;
+		/* z-index: -1; */
 	}
 
 

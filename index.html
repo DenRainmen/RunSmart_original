@@ -45,7 +45,7 @@
 						+7 (499) 922-89-74
 					</p>
 
-					<a href="#" class="call-btn">
+					<a href="#form" class="call-btn">
 						заказать звонок
 					</a>
 
@@ -78,9 +78,34 @@
 			
 				</div>
 			
-				<a href="#form">заказать консультацию</a>
+				<a href="#" onclick="consult.showModal()">заказать консультацию</a>
+
+				<dialog id="consult">
+
+					<h2 class="title-form">Просто заполните форму заявки </h2>
+
+					<h3 class="subtitle-form">и мы перезвоним вам в течении 10 минут</h3>
+
+					<form action="">
+
+
+
+						<input type="text" name="text" id="" placeholder="Ваше имя" required autocomplete="additional-name">
+						<input type="tel" name="tel" id="" placeholder="Ваш телефон" required autocomplete="cc-number">
+						<input type="email" name="email" id="" placeholder="Ваш E-mail" required autocomplete="email">
+						<input type="submit" value="Заказать консультацию" >
+		
+					</form>
+
+				<!-- Geometric Shapes Extended =>	Very Heavy Saltire -->
+					<span class="close" onclick="consult.close()" title="Close window">🞭</span>
+					
+				</dialog>
 			
 				<p>или <a href="#catalog" class="catalog">перейти в каталог</a></p>
+
+
+
 			
 			</div>
 
@@ -130,6 +155,10 @@
 	</section>
 
 
+
+
+
+
 	<!-- 	section contact-form -->
 
 	<section class="contact-form" id="form">
@@ -144,9 +173,22 @@
 				<input type="text" name="text" id="" placeholder="Ваше имя" required autocomplete="additional-name">
 				<input type="tel" name="tel" id="" placeholder="Ваш телефон" required autocomplete="cc-number">
 				<input type="email" name="email" id="" placeholder="Ваш E-mail" required autocomplete="email">
-				<input type="submit" value="Заказать консультацию" >
+				<input type="submit" value="Заказать консультацию" onclick="thanks.showModal()" >
 
 			</form>
+
+			<dialog id="thanks">
+
+				<h2 class="title-form">Спасибо за вашу заявку!</h2>
+
+				<h3 class="subtitle-form">Наш менеджер свяжется с вами в ближайшее время!</h3>
+
+				
+
+			<!-- Geometric Shapes Extended =>	Very Heavy Saltire -->
+				<span class="close" onclick="thanks.close()" title="Close window">🞭</span>
+				
+			</dialog>
 
 
 
@@ -278,7 +320,9 @@
 
 										</div>
 
-										<a href="https://market.yandex.ru/catalog--shagomery-i-aksessuary/18072178/list?text=%D0%BF%D1%83%D0%BB%D1%8C%D1%81%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D1%8B&hid=1009489&rs=eJwdzDEKwjAUgGEjDrEuGcVBO7q1L0mjDi6OTuIFHq-PSAttLaZF8AYeQQ8lOHsZxfWH79fyIG4j-X5td1UEkZRCiamIhRrOFtwShuLcYtlw3-G17ArktsbQ-YbLKh4sB1H2J5OpikdKzeZMoacKmS7nPvgKDZadrwMGTxcu4s9zvHx87r_7Xp7IeUtre9Sw0qk12cqZjbPJr50sgyHtITNM4Hy-AU05AacuTRNI4AvJCzJT&rt=9" target="_blank">КУПИТЬ</a>
+										<a href="#"   onclick="order.showModal()">КУПИТЬ</a>
+
+
 									</div>
 
 								</div>
@@ -458,6 +502,8 @@
 
 
 					</div>
+
+					
 
 
 
@@ -679,6 +725,29 @@
 
 						</div>
 
+
+						<dialog id="order">
+
+							<h2 class="title-form">Ваш заказ: </h2>
+		
+							<h3 class="subtitle-form">Модель Polar FT1</h3>
+		
+							<form action="">
+		
+		
+		
+								<input type="text" name="text" id="" placeholder="Ваше имя" required autocomplete="additional-name">
+								<input type="tel" name="tel" id="" placeholder="Ваш телефон" required autocomplete="cc-number">
+								<input type="email" name="email" id="" placeholder="Ваш E-mail" required autocomplete="email">
+								<input type="submit" value="КУПИТЬ" >
+				
+							</form>
+		
+						<!-- Geometric Shapes Extended =>	Very Heavy Saltire -->
+							<span class="close" onclick="order.close()" title="Close window">🞭</span>
+							
+						</dialog>
+
 					
 
 
@@ -776,12 +845,17 @@
 
 
 
-	<footer>
+	<footer >
 
-		<div class="info-card">
+	
+
+		<iframe
+			src="https://yandex.ru/map-widget/v1/?um=constructor%3A8aa40298fd7262450a8c55c7c9b8156e15cb0f41e891afff71cc6712682ee219&amp;source=constructor"
+			width="100%" height="100%" frameborder="0">
+		</iframe>
 
 
-
+		<div class="infoCard" >
 			<p class="address">Москва, Мясницкий проезд, д.3с1</p>
 			<p class="tel">8 (499) 922-89-74</p>
 
@@ -791,12 +865,11 @@
 				<img src="./assets/footer/pintrest.svg" alt="">
 			</div>
 
-		</div>
+	
+			<span class="closeDialog" onclick="this.parentElement.style.display='none';" title="Close window">🞭</span>
+		
+	</div>
 
-
-		<iframe
-			src="https://yandex.ru/map-widget/v1/?um=constructor%3A8aa40298fd7262450a8c55c7c9b8156e15cb0f41e891afff71cc6712682ee219&amp;source=constructor"
-			width="100%" height="100%" frameborder="0"></iframe>
 
 
 
