@@ -179,12 +179,12 @@
 
 		}
 
-		a {
+		button {
 
 			display: inline-block;
-			text-decoration: none;
 
-			/* border: 1px solid #000; */
+
+			border: none;
 
 			font-family: var(--font-family);
 			font-weight: 500;
