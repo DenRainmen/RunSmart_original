@@ -732,6 +732,9 @@ border-radius: 100%;
 		
 
 			.nav-item {
+				display: inline-flex;
+				align-items: center;
+
 				margin: 0 0.5vw;
 			}
 
