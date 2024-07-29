@@ -817,10 +817,10 @@ border-radius: 100%;
 					width: 15.6vw;
 					padding: 1vw;
 					border: 0.1vw solid #E8E8E8;
-					transition: 0.5s;
+					transition: 2s;
 					backface-visibility: hidden;
 				/* 	border-radius: 10px; */
-					transform: rotateY('0deg');
+					transform: rotateY(0deg);
 
 
 
@@ -863,6 +863,8 @@ border-radius: 100%;
 						text-align: center;
 						color: #c70101;
 						background-color: initial;
+
+						cursor: pointer;
 
 					}
 
@@ -952,10 +954,10 @@ border-radius: 100%;
 					width: 15.6vw;
 					padding: 1vw;
 					border: 0.1vw solid #E8E8E8;
-					transition: 0.5s;
+					transition: 2s;
 					backface-visibility: hidden;
 					/* border-radius: 0.5vw; */
-					transform: rotateY(-180deg);
+					transform: rotateY(180deg);
 
 
 
@@ -1010,6 +1012,7 @@ border-radius: 100%;
 						text-align: center;
 						color: #c70101;
 						background-color: initial;
+					cursor: pointer;
 
 					}
 
@@ -1091,7 +1094,7 @@ border-radius: 100%;
 
 			.front-side.active {
 
-				transform: rotateY(180deg);
+				transform: rotateY(-180deg);
 				backface-visibility: hidden;
 
 
@@ -1312,6 +1315,7 @@ border-radius: 100%;
 				img {
 					width: 8.9vw;
 					transition: 2s;
+					
 
 				}
 
@@ -1438,12 +1442,11 @@ footer {
 
 			img {
 				width: 2.8vw;
+				animation: scale 3s ease-in-out infinite;
+			
 			}
 
-			img:hover {
-				transform: scale(1.2);
-				transition: 1s;
-			}
+			
 
 		}
 
@@ -1511,7 +1514,7 @@ footer {
 	}
 
 	50% {
-		transform: scale(1.2)
+		transform: scale(1.18)
 	}
 
 	100% {
