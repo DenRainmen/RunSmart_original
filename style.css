@@ -729,8 +729,7 @@ border-radius: 100%;
 
 		.nav {
 			justify-content: center;
-
-
+		
 
 			.nav-item {
 				margin: 0 10px;
@@ -780,6 +779,12 @@ border-radius: 100%;
 				text-align: center;
 				color: #fff;
 			}
+
+
+			.nav-link.active span:hover{
+				color:#FFF;
+			}
+
 		}
 
 
