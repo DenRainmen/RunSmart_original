@@ -732,7 +732,7 @@ border-radius: 100%;
 		
 
 			.nav-item {
-				margin: 0 10px;
+				margin: 0 0.5vw;
 			}
 
 			.tabs-container {
@@ -746,7 +746,7 @@ border-radius: 100%;
 				border-radius: 0px !important;
 				color: #6b6b6b;
 				text-transform: uppercase;
-				border: 1px solid #6b6b6b;
+				border: 0.05vw solid #6b6b6b;
 				transform: skew(-20deg);
 
 			}
